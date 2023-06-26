@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-image: url(./public/assets/pokeball_v3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.title {
+  width: 200px;
+  height: 75px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.poke-container {
+  align-items: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.pokemon {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.pokemon .img-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.pokemon .img-container img {
+  margin-top: 20px;
+  max-width: 90%;
+}
+
+.pokemon .info {
+  margin-top: 20px;
+}
+
+.pokemon .info .number {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 5px 10px;
+}
+
+.pokemon .info .name {
+  letter-spacing: 1px;
+  margin: 15px 0 7px;
+}
