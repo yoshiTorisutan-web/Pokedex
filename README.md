@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <h1 align="center">Pokédex</h1>
 <div align="center">
-  <img src="assets/MAARC.svg" alt="Logo" width="80" height="80">
+  <img src="./public/assets/pokédex_titre.png"" alt="Logo" width="200" height="100">
 </div>
 
 <!-- Présentation du projet -->
