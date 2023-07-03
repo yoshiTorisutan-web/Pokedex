@@ -4,11 +4,30 @@
   box-sizing: border-box;
 }
 
+/* Pour les navigateurs basés sur WebKit */
+.element::-webkit-scrollbar {
+  width: 10px; /* largeur de la scrollbar */
+}
+
+.element::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* couleur de l'arrière-plan de la track */
+}
+
+.element::-webkit-scrollbar-thumb {
+  background-color: #be202f; /* couleur du pouce (la partie déplaçable de la scrollbar) */
+  border-radius: 5px; /* arrondi du pouce */
+}
+
+/* Pour les navigateurs basés sur Mozila Firefox */
+.element {
+  scrollbar-width: thin; /* épaisseur de la scrollbar */
+  scrollbar-color: #be202f #f1f1f1; /* couleur du pouce et de la track */
+}
+
 body {
   align-items: center;
-  background-image: url(./public/assets/pokeball_v3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(./public/assets/pokeball_pattern.png);
+  background-size: contain;
   font-family: "Lato", sans-serif;
   display: flex;
   flex-direction: column;
@@ -29,6 +48,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 50px;
   max-width: 1200px;
 }
 
