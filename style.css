@@ -4,35 +4,18 @@
   box-sizing: border-box;
 }
 
-/* Pour les navigateurs basés sur WebKit */
-.element::-webkit-scrollbar {
-  width: 10px; /* largeur de la scrollbar */
-}
-
-.element::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* couleur de l'arrière-plan de la track */
-}
-
-.element::-webkit-scrollbar-thumb {
-  background-color: #be202f; /* couleur du pouce (la partie déplaçable de la scrollbar) */
-  border-radius: 5px; /* arrondi du pouce */
-}
-
-/* Pour les navigateurs basés sur Mozila Firefox */
-.element {
-  scrollbar-width: thin; /* épaisseur de la scrollbar */
-  scrollbar-color: #be202f #f1f1f1; /* couleur du pouce et de la track */
-}
-
 body {
-  align-items: center;
   background-image: url(./public/assets/pokeball_pattern.png);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: "Lato", sans-serif;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
 }
 
 .title {
@@ -49,7 +32,9 @@ body {
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 50px;
+  gap: 15px;
   max-width: 1200px;
+  padding: 20px;
 }
 
 .pokemon {
@@ -88,4 +73,13 @@ body {
 .pokemon .info .name {
   letter-spacing: 1px;
   margin: 15px 0 7px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
